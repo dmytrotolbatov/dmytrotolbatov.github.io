@@ -1,16 +1,13 @@
 
 function newPush(item){
-    var addElement = [];
-    addElement[0] = item;
-    return this.concat(addElement);
+    this[this.length + 1] = item;
+    return this;
 }
 
 function newPop(){
-    var result = [];
-    for (var i = 0; i < this.length - 1; i++){
-        result.push(this[i]);
-    }
-    return result;
+    delete this[this.length - 1];
+    this.length = this.length - 1;
+    return this;
 }
 
 function newSlice(start){
