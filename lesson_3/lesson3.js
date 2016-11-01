@@ -1,16 +1,20 @@
 function factorial(n){
-    if(n != 1){
+    if(n != 1 && n != 0){
         return n * factorial(n - 1);
-    }
+    } else if(n == 0){
+		return 1;
+	}
     else{
-        return 1
+        return 1;
     }
 }
 
 function pow(n, m){
-    if(m != 1){
+    if(m != 1 && m != 0){
         return n * pow(n, m - 1);
-    }
+    }else if(m == 0){
+		return 1;
+	}
     else{
         return n;
     }
@@ -28,9 +32,11 @@ function sumOfNumbers(n){
 }
 
 function sumTo(n){
-    if(n != 1){
+    if(n != 1 && n != 0){
         return n + sumTo(n - 1);
-    }
+    }else if(n == 0){
+		return 1;
+	}
     else {
         return 1;
     }
@@ -57,9 +63,12 @@ function factorial2(n){
 
 function pow2(n, m){
     var result = n;
+	if (m == 0){
+		result = 1;
+	}else{
     for (var i = 1; i < m; i++ ){
        result = result * n;
-    }
+    }}
     return result;
 }
 
