@@ -1,0 +1,43 @@
+button{
+    position: absolute;
+    font-size: 20px;
+}
+
+#eat{
+    top: 45px;
+    left: 150px;
+}
+
+#drink{
+    top: 120px;
+    left: 100px;
+}
+
+#sport{
+    top: 45px;
+    right: 100px;
+}
+
+#sleep{
+    top: 120px;
+    right: 100px;
+}
+
+#fight{
+    top: 400px;
+    left: 400px;
+}
+
+img{
+    position: absolute;
+    left: 250px;
+}
+
+#text{
+    position: absolute;
+    top: 420px;
+    left:300px;
+    color: crimson;
+    font-size: xx-large;
+    text-align: center;
+}
