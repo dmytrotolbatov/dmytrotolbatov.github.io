@@ -7,25 +7,22 @@ function toDo() {
     if(input.value){
         if(mode == 'Add'){
             var li = document.createElement('li');
-            var check = document.createElement('input');
-            check.setAttribute("type", "checkbox");
+            li.classList.add('drag');
             li.innerText = input.value;
             li.onclick = click;
             var ul = document.getElementById('list');
             ul.appendChild(li);
-            ul.appendChild(check);
             input.value = '';
         }else{
             el.innerText = input.value;
             input.value = '';
-
-
             mode = 'Add';
         }
     }else{
         alert('Nothing to add');
     }
     buttonAdd.innerHTML = 'Add';
+    li.ondblclick = done;
 }
 
 function remove() {
@@ -33,6 +30,8 @@ function remove() {
     ul.removeChild(ul.lastChild);
     ul.removeChild(ul.lastChild);
 }
+
+
 
 function click(event) {
     el = event.toElement;
@@ -61,3 +60,25 @@ function show() {
         ul.appendChild(archive[i]);
     }
 }
+
+
+$( function() {
+    $( "#list" ).sortable({
+        revert: true
+    });
+
+    $( "ul, li" ).disableSelection();
+} );
+
+function done() {
+    el = event.toElement;
+    el.classList.toggle('dragDone');
+
+}
+
+
+
+
+
+
+
