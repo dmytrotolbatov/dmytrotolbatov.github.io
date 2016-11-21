@@ -1,0 +1,145 @@
+@font-face{
+    font-family: OstrichSans;
+    src: url(OstrichSans-Light.otf);
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+header{
+    background: linear-gradient(to bottom, #769715, #99cc01);
+    margin-top: -55px;
+
+}
+header h1{
+    color: white;
+    text-align: left;
+    font-family: OstrichSans;
+    font-size: 70px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+}
+header h1 span{
+    font-size: 100px;
+}
+
+header h1 b{
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+
+nav{
+    text-align: center;
+    color: #093500;
+    font-size: 40px;
+}
+nav a{
+    padding: 20px 35px;
+    text-decoration: none;
+    color: #093500;
+}
+
+#welcome{
+    background: #eef0fc;
+    height: 300px;
+    font-size: 25px;
+}
+
+#welcome img{
+    float: left;
+    padding-left: 10%;
+}
+
+#welcome h1{
+    color: #093500;
+    font-family: OstrichSans;
+    font-size: 70px;
+    padding-left: 40%;
+}
+
+#welcome h1 b{
+    color: #093500;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#welcome p{
+    padding-right: 45px;
+    padding-left: 40%;
+    padding-bottom: 25px;
+}
+
+#welcome p b{
+    color: #80a60f;
+}
+
+#about{
+    float: left;
+    width: 40%;
+    border-right: solid #eeeefb 1px;
+    padding-left: 25px;
+    font-size: 25px;
+}
+
+#about h2{
+    color: #4b6b44;
+    font-size: 50px;
+}
+
+#about p b{
+    color: #80a60f;
+}
+
+#researches img{
+    float: left;
+    padding-left: 30px;
+    padding-right: 35px;
+}
+
+#researches h2{
+    color: #4b6b44;
+    font-size: 50px;
+}
+
+#researches p b{
+    color: #80a60f;
+}
+
+#researches{
+    font-size: 25px;
+    /*border-bottom: solid #eeeefb 1px;*/
+}
+
+#services img{
+    float: left;
+    padding-left: 30px;
+    padding-right: 35px;
+}
+
+#services h2{
+    color: #4b6b44;
+    font-size: 50px;
+}
+
+#services p b{
+    color: #80a60f;
+}
+
+#services{
+    margin-top: 100px;
+    font-size: 25px;
+}
+
+footer{
+    margin-top: 50px;
+    border-top: solid #eeeefb 12px;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 25px;
+}
