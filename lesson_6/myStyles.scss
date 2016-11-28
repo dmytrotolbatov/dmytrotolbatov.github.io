@@ -1,0 +1,130 @@
+@font-face {
+  font-family: OstrichSans;
+  src: url(OstrichSans-Light.otf);
+}
+$smallFont: 25px;
+$bigFont: 50px;
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+header {
+  background: linear-gradient(to bottom, #769715, #99cc01);
+  margin-top: -55px;
+  h1 {
+    color: white;
+    text-align: left;
+    font-family: OstrichSans;
+    font-size: 70px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+  }
+  span {
+    font-size: 100px;
+  }
+  b {
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+}
+
+.material-icons.md-18 { font-size: 18px;}
+
+nav{
+  text-align: center;
+  color: #093500;
+  font-size: 40px;
+}
+a{
+  padding: 20px 35px;
+  text-decoration: none;
+  color: #093500;
+}
+
+#welcome{
+  background: #eef0fc;
+  height: 300px;
+  font-size: $smallFont;
+  img{
+    float: left;
+    padding-left: 10%;
+  }
+  h1{
+    color: #093500;
+    font-family: OstrichSans;
+    font-size: 70px;
+    padding-left: 40%;
+  }
+  b{
+    color: #093500;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  p{
+    padding-right: 45px;
+    padding-left: 40%;
+    padding-bottom: 25px;
+    b{
+      color: #80a60f
+    }
+  }
+}
+
+#about{
+  float: left;
+  width: 40%;
+  border-right: solid #eeeefb 1px;
+  padding-left: 25px;
+  font-size: $smallFont;
+  h2{
+    color: #4b6b44;
+    font-size: $bigFont;
+  }
+  p{
+    b{
+      color: #80a60f;
+    }
+  }
+}
+
+@mixin researchService{
+  img{
+    float: left;
+    padding-left: 30px;
+    padding-right: 35px;
+  }
+  h2{
+    color: #4b6b44;
+    font-size: $bigFont;
+  }
+  p{
+    b{
+      color: #80a60f;
+    }
+  }
+}
+
+#researches{
+  font-size: $smallFont;
+  @include researchService;
+}
+
+
+#services{
+  margin-top: 100px;
+  font-size: $smallFont;
+  @include researchService;
+}
+
+
+footer{
+  margin-top: 50px;
+  border-top: solid #eeeefb 12px;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: $smallFont;
+}
