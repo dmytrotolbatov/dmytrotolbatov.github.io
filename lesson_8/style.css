@@ -32,30 +32,3 @@ body{
 #empty{
     background-color: yellow;
 }
-
-
-/*
-.field{
-    background: black;
-    border: darkblue 2px solid;
-    border-radius: 5px 5px;
-    display: inline-block;
-    margin: 0;
-    width: 50px;
-    height: 50px;
-}
-
-section{
-    display: block;
-    margin-left: 25%;
-}
-
-.head{
-    background: green;
-    border: darkgreen;
-    border-radius: 5px 5px;
-    display: inline-block;
-    margin: 0;
-    width: 50px;
-    height: 50px;
-}*/
