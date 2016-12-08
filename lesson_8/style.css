@@ -1,0 +1,61 @@
+body{
+    text-align: center;
+}
+
+.land {
+    background-color: grey;
+    margin: auto;
+}
+
+.row {
+    display: block;
+    margin: 0;
+    line-height: 0;
+}
+
+.cell {
+    display: inline-block;
+    background: blue;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    font-size: larger;
+}
+
+.cell:hover {
+    background: red;
+}
+
+#empty{
+    background-color: yellow;
+}
+
+
+/*
+.field{
+    background: black;
+    border: darkblue 2px solid;
+    border-radius: 5px 5px;
+    display: inline-block;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+}
+
+section{
+    display: block;
+    margin-left: 25%;
+}
+
+.head{
+    background: green;
+    border: darkgreen;
+    border-radius: 5px 5px;
+    display: inline-block;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+}*/
