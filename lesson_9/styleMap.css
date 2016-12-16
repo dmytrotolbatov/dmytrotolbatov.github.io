@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#map {
+    height: 400px;
+    width: 70%;
+    margin-left: 15%;
+}
+
+section{
+    border: solid 25px chartreuse;
+    background-color: aquamarine;
+}
+
+p{
+    font-size: larger;
+}
+
+img{
+    border-radius: 15% 15%;
+    margin-top: 15px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styleMap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+<section>
+    <h1>Here you can find any place you want!</h1>
+    <h4>Put any address and get its latitude and longitude</h4>
+    <div id="floating-panel">
+        <input id="address" type="text" placeholder="What do you want to find?">
+        <input id="submit" type="button" value="Find">
+        <p>Latitude: <span id="latCoord"></span></p>
+        <p>Longitude: <span id="longCoord"></span></p>
+    </div>
+    <div id="map"></div>
+</section>
+
+<section>
+    <img src="img/joda.jpg" width="250" height="250">
+    <h1>Or you can speak like Master Joda</h1>
+    <h4>Type some text to speak like Joda</h4>
+    <input id="joda" type="text" placeholder="Say what want you to...">
+    <input id="jodaSubmit" type="button" value="Say">
+    <p id="jodaAnswer"></p>
+</section>
+
+<section>
+    <img src="img/love.jpg" width="250" height="250">
+    <h1>You can also check your love!</h1>
+    <h4>Put names of a couple and get results</h4>
+    <input id="male" type="text" placeholder="Male">
+    <input id="female" type="text" placeholder="Female">
+    <input id="loveSubmit" type="button" value="Check">
+    <p id="loveChecker"></p>
+</section>
+
+<section>
+    <img src="img/face.png" width="250" height="250">
+    <h1>You can even get to know something about any person by photo!!!</h1>
+    <h4>Insert URL of an image <i>(https://example.jpg)</i></h4>
+    <input id="face" type="text" placeholder="Show me this face">
+    <input id="faceSubmit" type="button" value="Check">
+    <p id="faceInfo"></p>
+</section>
+
+<footer><h6>All actions may take some time...just wait...</h6></footer>
+
+<script src="apis.js"></script>
+<script src="map.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDFGmTwo6TmjgzswEK4UfEZrW5Z2c9mWc&callback=initMap">
+</script>
+</body>
+</html>
