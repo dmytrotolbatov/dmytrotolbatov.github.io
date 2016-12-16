@@ -1,14 +1,11 @@
 function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
 
-    // While there remain elements to shuffle...
     while (0 !== currentIndex) {
 
-        // Pick a remaining element...
         randomIndex = Math.floor(Math.random() * currentIndex);
         currentIndex -= 1;
 
-        // And swap it with the current element.
         temporaryValue = array[currentIndex];
         array[currentIndex] = array[randomIndex];
         array[randomIndex] = temporaryValue;
@@ -51,8 +48,6 @@ function buildLand() {
             row.appendChild(land[i][j]);
         }
     }
-    /*$(land[1][1]).attr('data-cell', 'check');//test
-     console.log(land[1][1]);*/
 }
 
 var size = { width: 4, height: 4 };
@@ -92,32 +87,7 @@ function shuffleNumbers() {
 
 shuffleNumbers();
 
-/*
-$('.cell').click(function () {
-    var that = this;
-    for(var i = 0; i < land.length; i++){
-        for(var j = 0; j < land.length; j++){
-            if(i-1 > 0 && that[i-1][j].hasAttribute('id')){
-                console.log(that[i-1][j]);
-                //that[i][j] = that[i-1][j];
-                //that[i-1][j] = that[i][j];
-            }else if(j+1 < land.length && that[i][j+1].hasAttribute('id')){
-                console.log(that[i][j+1]);
-                //that[i][j] = that[i][j+1];
-                //that[i][j+1] = that[i][j];
-            }else if(i+1 < land.length && that[i+1][j].hasAttribute('id')){
-                console.log(that[i+1][j]);
-                //that[i][j] = that[i+1][j];
-                //that[i+1][j] = that[i][j];
-            }else if(j-1 > 0 && that[i][j-1].hasAttribute('id')){
-                console.log(that[i][j-1]);
-                //that[i][j] = that[i][j-1];
-                //that[i][j-1] = that[i][j];
-            }
-        }
-    }
 
-});*/
 
 $('body').on('click', '.cell', function () {
     var position = $(this).index();
@@ -176,37 +146,3 @@ function winCondition() {
     }
 }
 winCondition();
-/*
-$('.cell').on('click', function () {
-
-    var position = $(this).index();
-    var up = $(this).parent().prev().children().eq(position);
-    var right = $(this).next();
-    var down = $(this).parent().next().children().eq(position);
-    var left = $(this).prev();
-
-
-    if($(up).attr('id')) {
-        var thisUp = $(this).clone();
-        var thatUp = $(up).clone();
-        $(this).replaceWith(thatUp);
-        $(up).replaceWith(thisUp);
-    }else if($(right).attr('id')){
-        var thisRight = $(this).clone();
-        var thatRight = $(right).clone();
-        $(this).replaceWith(thatRight);
-        $(right).replaceWith(thisRight);
-    }else if($(down).attr('id')){
-        var thisDown = $(this).clone();
-        var thatDown = $(down).clone();
-        $(this).replaceWith(thatDown);
-        $(down).replaceWith(thisDown);
-    } else if ($(left).attr('id')) {
-        var thisLeft = $(this).clone();
-        var thatLeft = $(left).clone();
-        $(this).replaceWith(thatLeft);
-        $(left).replaceWith(thisLeft);
-    }
-
-});
-*/
