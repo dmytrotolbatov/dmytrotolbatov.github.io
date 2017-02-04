@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="CVApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="app.css" rel="stylesheet">
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+</head>
+<body>
+<h1>Dmytro Tolbatov</h1>
+<nav><a ng-href="/">About</a>|<a ng-href="#/skills">Skills</a>|<a ng-href="#/experience">Experience</a>|<a ng-href="#/portfolio">Portfolio</a></nav>
+
+<ng-view></ng-view>
+
+
+<script src="app.js"></script>
+</body>
+</html>
